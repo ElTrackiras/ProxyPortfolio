@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="row">
+                    <img class="rounded-circle" src="static/images/kurt_gwaps.jpg">
+                </div>
+                <div class="row text-center">
+                    <p style="font-size: 30px">Contact Me:</p>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="https://www.facebook.com/kurt.parel" target="_blank"><img class="img-responsive" src="static/images/Facebook-logo.png" width="50%"></a>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="https://www.linkedin.com/in/kurt-ellie-parel-3398361bb/" target="_blank"><img class="img-responsive" src="static/images/linkedin-logo.png" width="24%"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col">
+                <p style="font-size: 40px">{{ about_me }}</p>
+            </div>
+
+        </div>
+    </div>
+
+
+{% endblock content %}

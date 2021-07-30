@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="container">
+        {% for apps in softwares %}
+            <div class="row bg-secondary text-white">
+                <div class="col-sm-9" >
+                    <div class="row"><p><b>Author:</b> {{ apps[3] }}</p></div>
+                    <div class="row"><p><b>Software's Name:</b> {{ apps[1] }}</p></div>
+                    <div class="row"><p><b>DESCRIPTION:</b> {{ apps[2] }}</p></div>
+                    <div class="row"><a href="{{ apps[5] }}" target="_blank" class="text-warning">Download - (Source Code) {{ apps[5] }}</a></div>
+                    <div class="row"><a href="{{ apps[6] }}" target="_blank" class="text-warning">Download - (Zipped) {{ apps[6] }}</a></div>
+                </div>
+                <div class="col-sm-3"><img src="{{ url_for('static', filename=''+apps[4]) }}" class="img-fluid"></div>
+            </div>
+            <br><br>
+        {% endfor %}
+    </div>
+
+{% endblock content %}
+
